@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          dockerfile: Dockerfile   # ← FIXED
+          file: Dockerfile   # ← FIXED
           push: false
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/githubactionspractice:latest
 
